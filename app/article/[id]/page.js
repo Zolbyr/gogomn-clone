@@ -11,7 +11,7 @@ export default async function ArticlePage({ params }) {
   return (
     <section className="cols">
       <article className="card post">
-        <Thumb cat={a.cat} big />
+        <Thumb cat={a.cat} image={a.image} seed={a.id} big />
         <div className="pad">
           <Link href={`/category/${a.cat}`} className="meta">{getCat(a.cat).name}</Link>
           <h1>{a.title}</h1>
